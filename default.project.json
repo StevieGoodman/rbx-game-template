@@ -1,0 +1,27 @@
+{
+    "name": "Project Name",
+    "emitLegacyScripts": false,
+
+    "tree": {
+        "$ignoreUnknownInstances": true,
+        "$className": "DataModel",
+
+        "ReplicatedStorage": {
+            "$ignoreUnknownInstances": true,
+            "$className": "ReplicatedStorage",
+
+            "Client": { "$path": "src/Client" },
+            "Shared": {
+                "$path": "src/Shared",
+                "$ignoreUnknownInstances": true
+            },
+            "Packages": { "$path": "Packages"}
+        },
+
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+
+            "Server": { "$path": "src/Server" }
+        }
+    }
+}
